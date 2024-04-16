@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+
+        <div class="nav container">
+        
+            <i class='bx bx-menu' id="menu-icon"></i>
+        
+            <a href="#" class="logo">Viaje<span>ro</span>.com <span></span></a>
+        
+            <ul class="navbar">
+                <li><a href="../Inicio/index.html">Inicio</a></li>
+                <li><a href="#vuelos"class="active">Vuelos</a></li>
+                <li><a href="../Inicio_de_sesion/Inicio.html">Iniciar Sesion</a></li>
+                <li><a href="../Registro/Registro.html">Registro</a></li>
+              </ul>
+              
+              
+        
+            <i class='bx bx-search' id="search-icon"></i>
+        
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Search here...">
+            </div>
+        </div>
+
+        <main>
+          <section id="flights">
+            <h2>Vuelos</h2>
+            <form id="flight-form">
+              <label for="departure-city">Ciudad de salida:</label>
+              <select id="departure-city">
+                <option value="bog">Bogotá</option>
+                <option value="med">Medellín</option>
+                <option value="cal">Cali</option>
+              </select>
+      
+              <label for="arrival-city">Ciudad de Llegada:</label>
+              <select id="arrival-city">
+                <option value="bog">Bogotá</option>
+                <option value="med">Medellín</option>
+                <option value="cal">Cali</option>
+              </select>
+      
+              <label for="departure-date">Fecha de salida:</label>
+              <input type="date" id="departure-date" name="departure-date" required>
+              
+              <label for="return-date">Fecha de retorno:</label>
+              <input type="date" id="return-date" name="return-date" disabled>
+              
+              <label for="round-trip">Viaje redondo:</label>
+              <input type="checkbox" id="round-trip" name="round-trip">
+
+ 
+              <div class = <"button-container">
+              <button onclick="calculatePrice()">Aceptar</button>
+
+              <div id="result"></div>
+            </div>
+            </form>
+          </section>
+        </main>
+          
+
+     
+    <script src="scripts.js"></script>
+</body>
+</html>
