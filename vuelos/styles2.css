@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
+* {
   font-family: 'Poppins', sans-serif; 
   margin: 0;
   padding: 0;
@@ -11,9 +11,9 @@
 }
 /* Vatiables */
 :root {
-  --main-color: #d90429;
-  --text-color: #020102;
-  --bg-color: #fff;
+  --main-color: #58A399;
+  --text-color: #E2F4C5;
+  --bg-color: #496989;
 }
 /* Custom Scroll Bar */
 html::-webkit-scrollbar{
@@ -120,7 +120,6 @@ color: var(--main-color);
 }
 
 
-
 body {
   font-family: Arial, sans-serif;
 }
@@ -171,11 +170,6 @@ button:hover {
   cursor: not-allowed;
 }
 
-#round-trip:checked ~ #return-date {
-  background-color: #fff;
-  color: #333;
-  cursor: text;
-}
 
 #round-trip:checked ~ #price {
   display: block;
@@ -190,7 +184,7 @@ button:hover {
 }
 
 #home {
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -199,19 +193,13 @@ button:hover {
 }
 
 #destinos, #servicios, #contacto {
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 20px;
 }
 
 .footer{
   background: var(--text-color);
-  color: #f6f6f6;
-  border-top: 2px solid var(--main-color);
-}
-
-.footer{
-  background: var(--text-color);
-  color: #f6f6f6;
+  color: #F6F6F6;
   border-top: 2px solid var(--main-color);
 }
 
